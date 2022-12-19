@@ -5,5 +5,9 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.sendFile('index.html', { root: 'views' });
 });
+/* GET Link Tree */
+router.get('/links', function(req, res, next) {
+  res.sendFile('links.html', { root: 'views' }); 
+});
 
 module.exports = router;
